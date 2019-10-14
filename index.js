@@ -8,6 +8,9 @@ require('dotenv').config()
 
 const app = express();
 
+app.use(cors())
+app.use(morgan('dev'))
+
 // utils
 const {dbConnection, db, options } = require('./utils/database-utils');
 
@@ -20,9 +23,6 @@ const { User } = require('./models/User')
 const seedRoute = require('./routes/seedUsers')
 const authRoute = require('./routes/authRoute')
 const fetchRoute = require('./routes/fetchRoute')
-
-app.use(cors())
-app.use(morgan('dev'))
 
 const PORT = process.env.PORT || 5000;
 

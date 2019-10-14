@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios')
-const cors = require('cors')
 require('dotenv').config()
-
-router.use(cors())
 
 router.get('/', async (req, res) => {
     try {
