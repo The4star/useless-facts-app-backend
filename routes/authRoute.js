@@ -3,11 +3,15 @@ const mongoose = require('mongoose');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
+const cors = require('cors')
 require('dotenv').config()
 
 // models
 
 const { User } = require('../models/User')
+
+
+router.use(cors())
 
 router.post('/registration', express.json(), async (req,res) => {
     try {

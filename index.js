@@ -19,7 +19,6 @@ const { User } = require('./models/User')
 
 const seedRoute = require('./routes/seedUsers')
 const authRoute = require('./routes/authRoute')
-const protectedRoute = require('./routes/protectedRoutes')
 const fetchRoute = require('./routes/fetchRoute')
 
 app.use(cors())
@@ -31,7 +30,6 @@ mongoose.connect(db, options, (err) => dbConnection(err));
 
 app.use('/seed', seedRoute);
 app.use('/auth', authRoute);
-app.use('/protected', protectedRoute);
 app.use('/fetch', fetchRoute);
 
 app.listen(PORT, () => console.log(`listening on port ${PORT}`));
