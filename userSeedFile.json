@@ -1,18 +1,11 @@
 [
     {
         "username": "clinton",
-        "password": "password"
+        "password": "123456"
     },
     {
-        "username": "emma",
-        "password": "dogfart"
+        "username": "kricket",
+        "password": "wife"
     },
-    {
-        "username": "kyle",
-        "password": "hairyback"
-    },
-    {
-        "username": "chris",
-        "password": "topher"
-    }
+
 ]

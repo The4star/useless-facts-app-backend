@@ -8,8 +8,9 @@ https://github.com/The4Star
 |-----------|
 | Clinton Forster | 
 
-Back end Hosted on Heroku
-Deployed Site: coming soon
+Back end Hosted on Heroku, front end hosted on Netlify.
+
+Deployed Site: https://useless-facts-app.netlify.com
 
 ## Purpose 
 
